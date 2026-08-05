@@ -61,6 +61,10 @@ body {
     line-height: 1.6em;
 }
 
+#wrap {
+    width: 1460px;
+)
+
 a {
     color: inherit;
     text-decoration: none;
