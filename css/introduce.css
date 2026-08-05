@@ -1,0 +1,43 @@
+#introduce {
+    background-color: #1976d2;
+    padding: 100px 0;
+}
+
+#introduce h1,
+#introduce h2,
+#introduce p {
+    color: #fff;
+}
+
+#introduce h1 {
+    text-align: center;
+}
+
+#introduce h2 {
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.infobox {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    padding: 0 110px;
+}
+
+.infobox .imgbox {
+    width: 200px;
+    height: 200px;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));
+}
+
+.info {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.info:nth-child(2) {
+    align-self: flex-end;
+    text-align: right;
+}

@@ -1,0 +1,50 @@
+#header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 10px;
+    backdrop-filter: blur(20px);
+    background-color: #00182a;
+    z-index: 999;
+}
+
+#showing_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.7);
+    backdrop-filter: blur(20px);
+    z-index: 999;
+}
+
+#header .inner,
+#showing_header .inner {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 30px;
+}
+
+.gnb {
+    display: flex;
+    gap: 50px;
+}
+
+.gnb li {
+    font-size: 14pt;
+    font-weight: 600;
+    transition: color 0.2s, font-weight 0.2s;
+}
+
+.gnb li:hover {
+    font-weight: 900;
+    color: #FF8A00;
+}

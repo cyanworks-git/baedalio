@@ -1,0 +1,191 @@
+html,
+body {
+    /* Prevent font scaling in landscape */
+    -webkit-text-size-adjust: none;
+    /*Chrome, Safari, newer versions of Opera*/
+    -moz-text-size-adjust: none;
+    /*Firefox*/
+}
+
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+em,
+img,
+small,
+strong,
+b,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section,
+summary,
+video,
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'SUITE', Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    line-height: 1.6em;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+h1, h2, h3, p {
+    color: #00182a;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 30pt;
+    line-height: 1.6em;
+}
+
+h2 {
+    font-size: 24pt;
+    line-height: 1.6em;
+}
+
+h3 {
+    font-size: 18pt;
+    line-height: 1.6em;
+}
+
+b {
+    font-weight: 600;
+}
+
+strong {
+    font-weight: 900;
+}
+
+span {
+    color: #ff8a00;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.inner {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5),
+                inset 3px 3px 4px rgba(255,255,255,0.5);
+    transform: scale(100%);
+    filter: brightness(1);
+    transition: transform 0.2s, filter 0.2s;
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn:hover {
+    filter: brightness(1.2);
+    transform: scale(105%);
+}
+
+.btn:active {
+    filter: brightness(0.8);
+    transform: scale(100%);
+}
+
+.ogbtn {
+    background-color: #ff8a00;
+    color: #00182a;
+}
+
+.bbtn {
+    background-color: #1976d2;
+    color: #fff;
+}
+
+.bigbtn {
+    font-size: 18pt;
+    padding: 15px 20px;
+}
+
+.btn a {
+    display: block;
+}
+
+.wavy {
+    color: inherit;
+    position: relative;
+    display: inline-block;
+}
+
+.wavy::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 12px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCAxMiI+PHBhdGggZD0iTSAwLDYgQyAxMCwyIDEwLDIgMjAsNiBDIDMwLDEwIDMwLDEwIDQwLDYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmOGEwMCIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L3N2Zz4=");
+    background-size: 32px 12px;
+    background-repeat: repeat-x;
+    -webkit-mask-image: linear-gradient(#000, #000);
+    mask-image: linear-gradient(#000, #000);
+    border-radius: 6px;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    transition: clip-path 1s cubic-bezier(0.25, 1, 0.5, 1) 0.5s;
+}
+
+.wavy.active::after {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
